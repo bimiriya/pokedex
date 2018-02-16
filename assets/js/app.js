@@ -7,7 +7,7 @@ pokeapi
       sprites.then(response => response.json()).then(data => {
         $("#results").append(`<div class="col-lg-2"><div class="card">
       <img src=${data.sprites.front_default} data-toggle="modal" data-target="#myModal">
-      <p>${i.name.toUpperCase()}</p>
+      <p class="text-uppercase">${i.name}</p>
       </div></div>`);
       });
     });
