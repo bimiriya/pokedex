@@ -27,7 +27,7 @@ $("#results").on("click", ".card", function () {
     $.each(data.abilities, function (abil, i) {
       
       namePokemon.innerHTML = data.name.toUpperCase();
-      type.innerHTML = data.type;
+      type.innerHTML = data.types[0].type.name;
       height.innerHTML = data.height/10 + 'm';
       weight.innerHTML = data.weight/10 + 'kg';
       abilities.innerHTML = i.ability.name;
