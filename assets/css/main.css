@@ -1,0 +1,32 @@
+body{
+    background-image: url('../img/fondoPokemon.jpg');
+    background-size: cover;
+    font-family: 'Fjalla One', sans-serif;
+}
+#table{
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+#table td{
+    border: 0px
+}
+.card{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+}
+.modal-content{
+    color: rgba(255, 206, 37, 1);
+    font-size: 1.1em;
+    text-shadow: -2px 1px 3px rgba(0, 0, 0, 1);
+    background-image: url('../img/fondoModal.jpg');
+    background-size: cover;
+}
+.logoPokemon{
+    width: 20em;
+    margin-top: 1em
+}
+#namePokemon{
+    color: rgba(205, 0, 0, 1);
+    text-shadow: -2px 1px 3px rgba(0, 0, 0, 1);
+}

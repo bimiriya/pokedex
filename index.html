@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Pokedex</title>
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -14,7 +15,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <h2>Pokedex</h2>
+          <img src="assets/img/logoPokemon.png" alt="logo" class="logoPokemon">
         </div>
       </div>
     </div>
@@ -22,19 +23,75 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-8">
+      <div class="col-lg-12">
         <div id="results"></div>
-      </div>
-      <div class="col-lg-4">
-        <div id="profile"></div>
       </div>
     </div>
   </div>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" id="namePokemon"></h4>
+      </div>
+      <div class="modal-body">
+        <table class="table" id="table">
+          <tr>
+              <td>Type:</td>
+              <td id="type"></td>
+          </tr>
+          <tr>
+              <td>Height:</td>
+              <td id="height"></td>
+          </tr>
+          <tr>
+              <td>Weight:</td>
+              <td id="weight"></td>
+          </tr>
+          <tr>
+              <td>Abilities:</td>
+              <td id="abilities"></td>
+          </tr>
+          <tr>
+              <td>Speed:</td>
+              <td><progress  max="100" id="speed"></progress></td>
+          </tr>
+          <tr>
+              <td>Special-defense</td>
+              <td><progress max="100" id="specialDefense"></progress></td>
+          </tr>
+          <tr>
+              <td>Special-attack</td>
+              <td><progress max="100" id="specialAttack"></progress></td>
+          </tr>
+          <tr>
+              <td>Defense</td>
+              <td><progress max="100" id="defense"></progress></td>
+          </tr>
+          <tr>
+              <td>Attack:</td>
+              <td><progress max="100" id="attack"></progress></td>
+          </tr>
+          <tr>
+              <td>Hp</td>
+              <td><progress max="100" id="hp"></progress></td>
+          </tr>
+      </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
 
+  </div>
+</div>
   <script
   src="http://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>
